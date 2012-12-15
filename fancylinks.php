@@ -80,7 +80,7 @@ class plgSystemFancyLinks extends JPlugin
 		$ignores = explode(',', $this->_ignoreClass);
 		$intersect = array_intersect($classes, $ignores);
 		
-		if (empty($intersect))
+		if (empty($intersect) || !$intersect[0])
 		{
 			
 			$parse = isset($args['href']) ? pathinfo($args['href']) : null ;
