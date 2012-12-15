@@ -44,7 +44,7 @@ class plgSystemFancyLinks extends JPlugin
 		if (!$this->_forceIncludeCss)
 		{
 			$doc = JFactory::getDocument();
-			$doc->addStyleSheetDeclaration($this->_css);
+			$doc->addStyleDeclaration($this->_css);
 		}
 	}
 	
