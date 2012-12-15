@@ -33,7 +33,7 @@ class plgSystemFancyLinks extends JPlugin
 		if (empty($this->_extList) || !trim($this->_extList[0]))
 			return true;
 	
-		$this->_css = 'a.fancy-link{line-height: 1em; margin: .3em 0;display:inline-block}a.fancy-link span{display: inline-block;color: #fff;text-shadow: 0 -1px 0 #666;text-align: center;text-transform: uppercase;margin-right: 1em;width: 2.7em;height: 1.4em;line-height: 1.4em;font-size: .9em;padding: 0.1em 0;border-radius: .3em;border-width: 1px;border-style: solid;font-family: Verdana}a.fancy-link.small span{font-size: 0.8em}a.fancy-link.large span{font-size: 1.2em;}';
+		$this->_css = 'a.fancy-link{line-height: 1em; margin: .3em 0;display:inline-block}a.fancy-link span{display: inline-block;color: #fff;text-shadow: 0 -1px 0 #666;text-align: center;text-transform: uppercase;margin-right: 1em;min-width: 2.7em;height: 1.4em;line-height: 1.4em;font-size: .9em;padding: 0.1em 0;border-radius: .3em;border-width: 1px;border-style: solid;font-family: Verdana}a.fancy-link.small span{font-size: 0.8em}a.fancy-link.large span{font-size: 1.2em;}';
 		foreach ($this->_extList as $str)
 		{
 			list($ext, $color) = explode('=', $str);
