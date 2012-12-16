@@ -45,6 +45,6 @@
           </fields>
         </config>
         <updateservers>
-		<server type="extension" name="Fancy Links">http://saity74.ru/fancylinks/extension.xml</server>
+		<server type="extension" name="Fancy Links">http://saity74.ru/updates/fancylinks/extension.xml</server>
 	</updateservers>
 </extension>
